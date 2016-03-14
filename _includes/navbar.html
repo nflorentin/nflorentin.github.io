@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% for node in site.pages %}
+          {% if node.title %}
+            <li>
+              {% if node.title == page.title %}
+                <a href="{{ node.url | prepend: site.baseurl }}" class="active">{{ node.title }}</a>
+              {% else %}
+                <a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
