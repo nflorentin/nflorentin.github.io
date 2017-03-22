@@ -1,2 +1,10 @@
+<<<<<<< HEAD
 _site/
 .sass-cache/
+=======
+_site
+.sass-cache
+.jekyll-metadata
+
+.DS_Store
+>>>>>>> ebd7757d050d77f70c9c80f9b341543baef255b9
