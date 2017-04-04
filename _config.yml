@@ -1,20 +1,19 @@
 locale: "fr"
-title: Strata # Title of your site
+title: Vivre Végé à Grenoble # Title of your site
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: ""
 
 # Default description in social shares for the jekyll-seo-tag gem
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Vivre Végé Grenoble est un repertoire de lieux adaptés aux personnes
+  végétariennes, végétaliennes et véganes
 
 # Author details for the jekyll-seo-tag gem
 author:
-  name: Your Name
-  email: your-email@domain.com
-  twitter: # twitter username without the @ symbol
+  name: Nicolas Florentin
+  email: nf.florentin@gmail.com
+ # twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
 social:
@@ -42,13 +41,13 @@ webmaster_verifications:
 # -----------
 # CloudCannon
 
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
+# social_icons:
+#   - Facebook
+#   - Google Plus
+#   - Instagram
+#   - LinkedIn
+#   - Pinterest
+#   - Tumblr
+#   - Twitter
+#   - YouTube
+#   - RSS
