@@ -10,8 +10,8 @@
 		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
 		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
 		<link rel="stylesheet" href="/css/main.css">
+		
 		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
 
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -29,10 +29,12 @@
       <!-- <h1 class="editable"><strong>I am <a href="/">Strata Reloaded</a></strong>, a super simple<br>
       responsive site template freebie<br>
       adapted by <a href="http://comfusionllc.com">Comfusion LLC</a>.</h1> -->
-			<h1 class="h1">Vivre Végé Grenoble</h1>
-			<h3><a href="/ou_manger/">Où manger</a></h3>
-			<h3><a href="/a_propos/">À propos</a></h3>
-			<h5><a href="/credits/">Crédits</a></h5>
+			
+			<nav class="nav-left">
+				<a href="/"><h1 class="h1">Vivre Végé Grenoble</h1></a>
+				<a href="/ou_manger/">Où manger</a><br>
+				<a href="/credits/">Crédits</a>
+			</nav>
     </header>
 
     {{ content }}
@@ -78,5 +80,6 @@
 			</script>
 		{% endif %}
 
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
 	</body>
 </html>

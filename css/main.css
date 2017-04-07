@@ -3164,3 +3164,11 @@
  	.cms-editor-active .editor-link {
  		display: inline-block;
  	}
+
+
+
+.nav-left a {
+	color: white;
+	border-bottom: 0;
+}
+
