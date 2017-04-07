@@ -1,13 +1,13 @@
 locale: "fr"
-title: Vivre Végé à Grenoble # Title of your site
+title: ' Vivre Végé Grenoble' # Title of your site
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: ""
 
 # Default description in social shares for the jekyll-seo-tag gem
 description: > # this means to ignore newlines until "baseurl:"
-  Vivre Végé Grenoble est un repertoire de lieux adaptés aux personnes
-  végétariennes, végétaliennes et véganes
+  Vivre Végé Grenoble est un repertoire de lieux - surtout pour manger - adaptés aux personnes
+  végétariennes, végétaliennes et véganes.
 
 # Author details for the jekyll-seo-tag gem
 author:
