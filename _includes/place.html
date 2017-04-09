@@ -1,0 +1,14 @@
+ <article>
+  <h4>
+    {{ include.place.name }}
+    {% for num in (1..include.place.price) %} <i class="fa fa-euro"></i> {% endfor %} /
+    {% for num in (1..include.place.vegan_friendly) %} <i class="fa fa-leaf"></i> {% endfor %} 
+  </h4>
+
+  {{ include.place.description }}
+
+  <p>
+    Prix {% for num in (1..include.place.price) %} <i class="fa fa-euro"></i> {% endfor %} 
+    Vegan-friendly {% for num in (1..include.place.vegan_friendly) %} <i class="fa fa-leaf"></i> {% endfor %} 
+  </p>
+</article>

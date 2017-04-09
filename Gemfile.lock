@@ -52,6 +52,3 @@ DEPENDENCIES
   jekyll-paginate (= 1.1.0)
   jekyll-seo-tag (= 2.1.0)
   jekyll-sitemap (= 1.0.0)
-
-BUNDLED WITH
-   1.14.4

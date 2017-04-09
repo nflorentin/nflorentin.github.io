@@ -1,0 +1,15 @@
+festina_lente:
+  name: Festina Lente
+  description: |
+    <p>
+      Festina Lente est un petit restaurant végétarien charmant situé dans le quartier des antiquaires du centre de Grenoble. Il est tenu par une italienne qui cuisine merveilleusement bien, en faisant la part belle aux légumes bio et locaux. C’est la patronne seule qui fait la cuisine et le service, l’accueil est très sympathique  et l’ambiance dans le restaurant est très agréable, cosy et calme: un petit havre de paix.
+    </p>
+    
+    <p>
+      Le buffet du midi est somptueux: les plats riches en couleur et en saveurs sont un régal autant pour les yeux que pour le palais. Des exemples de ce qu’on y mange: veloutés de légumes, lasagnes d’épinards et graines de tournesol, semoule à l’orange, patates douces aux épices, lentilles à l’orientale, crumbles.
+    </p>
+    <p>
+      Ce restaurant est complètement vegan-friendly puisqu’il suffit de le préciser au moment de la réservation pour que le buffet soit adapté en conséquence. Pensez quand même à le faire quelques jours avant pour ne pas la prendre de court. 
+    </p>
+  price: 2
+  vegan_friendly: 2
