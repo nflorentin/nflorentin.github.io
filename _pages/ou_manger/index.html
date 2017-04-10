@@ -5,44 +5,24 @@ permalink: /ou_manger/
 ---
 <div id="main">
   <h3>Cuisine du monde</h3>
- 
 
-  {% include place.html place=site.data.places.festina_lente %}
-
-  {% include place.html place=site.data.places.pause_bio %}
-
-   {{ site.categories }} 
-   ====
-    <h3>{{ category | first }}</h3>
-
-    {% for category in site.categories %}
-      {{ category | first }}
-      {% for posts in category %}
-        {% for post in posts %}
-          {% if post.url %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-    {% endfor %}
-
-
-
-  -------------------------
-
-  {% for post in site.posts %}
-    {{ post.title }}
+  {% assign posts = site.posts | where:'group','cuisine du monde' %}
+  {% for post in posts %}
+    {% include place.html place=post %}
   {% endfor %}
 
+  <h3>Cuisine indienne</h3>
 
-  <section>
-    <h2>Où manger</h2>
+  {% assign posts = site.posts | where:'group','cuisine indienne' %}
+  {% for post in posts %}
+    {% include place.html place=post %}
+  {% endfor %}
 
-    <p translate="no">
-      W3C/MIT<br>
-      32 Vassar Street<br>
-      Room 32-G515<br>
-      Cambridge, <abbr title="Massachusetts">MA</abbr> 02139 USA
-    </p>
-  </section>
+  <h3>Cuisine du Maghreb</h3>
+
+  {% assign posts = site.posts | where:'group','cuisine du maghreb' %}
+  {% for post in posts %}
+    {% include place.html place=post %}
+  {% endfor %}
+
 </div>

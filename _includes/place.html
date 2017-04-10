@@ -1,14 +1,15 @@
  <article>
   <h4>
     {{ include.place.name }}
-    {% for num in (1..include.place.price) %} <i class="fa fa-euro"></i> {% endfor %} /
-    {% for num in (1..include.place.vegan_friendly) %} <i class="fa fa-leaf"></i> {% endfor %} 
   </h4>
 
-  {{ include.place.description }}
+  {{ include.place.content }}
 
   <p>
-    Prix {% for num in (1..include.place.price) %} <i class="fa fa-euro"></i> {% endfor %} 
-    Vegan-friendly {% for num in (1..include.place.vegan_friendly) %} <i class="fa fa-leaf"></i> {% endfor %} 
+    {% for num in (1..include.place.price) %} <i class="fa fa-euro"></i> {% endfor %} /
+    {% for num in (1..include.place.vegan_friendly) %} <i class="fa fa-leaf"></i> {% endfor %} /
+    <a href="{{ include.place.gmaps_link }}" target="_blank"><i class="fa fa-map-marker"></i></a> 
   </p>
 </article>
+
+
