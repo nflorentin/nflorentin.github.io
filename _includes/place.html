@@ -2,14 +2,13 @@
   <h4>
     {{ include.place.name }}
   </h4>
-
-  {{ include.place.content }}
-
   <p>
     {% for num in (1..include.place.price) %} <i class="fa fa-euro"></i> {% endfor %} /
-    {% for num in (1..include.place.vegan_friendly) %} <i class="fa fa-leaf"></i> {% endfor %} /
+    {% for num in (1..include.place.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %} /
     <a href="{{ include.place.gmaps_link }}" target="_blank"><i class="fa fa-map-marker"></i></a> 
   </p>
+
+  {{ include.place.content }}
 </article>
 
 
