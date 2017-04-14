@@ -33,6 +33,9 @@
 
     {{ content }}
 
+		{% assign category = site.my_categories | where: "slug", 'ou-manger' %}
+  	{{ category.name }}
+
     <footer id="footer">
       <ul class="icons">
         <li>

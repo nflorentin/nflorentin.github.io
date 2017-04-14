@@ -12,6 +12,11 @@ layout: default
       {{ content }}
     </section>
 
+    {{ page.category }}
+    {% assign category = site.my_categories | where: "slug", page.category %}
+    {% assign category = category[0] %}
+    {{ category.name }}
+
     <footer>
       <div class="row">
       {% if page.previous %}

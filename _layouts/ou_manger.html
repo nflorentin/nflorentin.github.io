@@ -6,5 +6,16 @@ title: 'Où manger'
 <div id="main">
   <h1>Où manger</h1>
 
-  {{ page.title }}
+  hey
+  <br>
+  page title {{ page.title }}
+  <br>
+  page name {{ page.name }}
+  <br>
+  name {{ name }}
+  <br>
+  page slug {{ page.slug }}
+
+  {% assign category = site.my_categories | where: "slug", 'ou-manger' %}
+  {{ category.name }}
 </div>
