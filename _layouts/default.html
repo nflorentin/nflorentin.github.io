@@ -7,6 +7,7 @@
 		<meta http-equiv="content-language" content="{{ site.locale }}" />
 		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 		<meta name="robots" content="noindex">
+		<title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
 
 		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="/css/main.css">
@@ -16,7 +17,7 @@
     <link rel="icon" type="image/png" href="/touch-icon.png" sizes="128x128">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
-    {% seo %}
+    {% seo title=false %}
     {% feed_meta %}
 	</head>
 
@@ -24,7 +25,7 @@
     <header id="header">		
 			<nav class="nav-left">
 				<a href="/"><h1 class="h1">Vivre Végé Grenoble</h1></a>
-				<a href="/ou_manger/">Où manger</a><br>
+				<a href="/categories/ou-manger/">Où manger</a><br>
 				<a href="/credits/">Crédits</a><br>
 				<image src="/images/favicon.png"></image>
 			</nav>

@@ -1,5 +1,5 @@
 locale: "fr"
-title: ' Vivre Végé Grenoble' # Title of your site
+title: 'Vivre Végé Grenoble' # Title of your site
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: UA-97249866-1
@@ -51,6 +51,11 @@ webmaster_verifications:
 #   - Twitter
 #   - YouTube
 #   - RSS
+collections:
+  my_categories:
+    output: true
+    permalink: /categories/:name/
+
 
 defaults:
   -
@@ -59,4 +64,9 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "default"
-      sitemap: false
+      #sitemap: false
+  -
+    scope:
+      path: ""
+      type: "my_categories"
+    values: {}
