@@ -5,7 +5,8 @@ name: Tea and Bubbles
 price: 1
 vegan_friendly: 2
 gmaps_link: https://www.google.fr/maps/place/Tea+and+Bubbles/@45.1920818,5.7267276,17z/data=!3m1!4b1!4m5!3m4!1s0x478af48a3ec7bc81:0xae948cf101862dc2!8m2!3d45.1920818!4d5.7289163
-tags: ['snack']
+tags: ['snack', 'boissons']
+category: ou-manger
 ---
 
 Ce tout petit établissement concentre toute son activité dans la vente de boissons sucrées à base de thé, de fruits et de perles de tapioca (mais pas seulement!). Il y a tellement de saveurs et possibilités différentes que je vous recommande de vous y rendre pour découvrir par vous même et composer votre boisson en fonction de vos goûts. 

@@ -1,56 +1,55 @@
 ---
 layout: default
+comments: true
 ---
+{% capture price_title %}
+  {% case page.price %}
+  {% when 1 %}
+  budget moins de 10 euros
+  {% when 2  %}
+  budget 10-20 euros
+  {% else %}
+  budget 20 euros et plus
+  {% endcase %}
+{% endcapture %}
+
+{% capture friendly_title %}
+  {% case page.vegan_friendly %}
+  {% when 1 %}
+  assez vegan-friendly
+  {% when 2  %}
+  vegan-friendly
+  {% else %}
+  super vegan-friendly
+  {% endcase %}
+{% endcapture %}
+
 <div id="main">
   <article>
     <header>
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <h1 class="post-title">{{ page.title }}
+
+      {% for tag in page.tags %}
+            <button class="toolbar-button toolbar-button--outline">{{ tag }}</button>
+        {% endfor %} 
+      </h1>
+      <p class="post-meta">
+        
+      </p>
     </header>
 
     <section>
       {{ content }}
+
+      <p>
+        {% for num in (1..page.price) %} <i class="fa fa-euro" title="{{ price_title }}"></i> {% endfor %}&nbsp;&nbsp;•&nbsp;&nbsp;
+        {% for num in (1..page.vegan_friendly) %} <image src="/images/favicon.png" title="{{ friendly_title }}"></image> {% endfor %}&nbsp;&nbsp;•&nbsp;&nbsp;
+        <a href="{{ page.gmaps_link }}" target="_blank"><i class="fa fa-map-marker"></i></a> 
+      </p>
     </section>
 
-    {{ page.category }}
-    {% assign category = site.my_categories | where: "slug", page.category %}
-    {% assign category = category[0] %}
-    {{ category.name }}
-
     <footer>
-      <div class="row">
-      {% if page.previous %}
-        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt">
-          <header>
-            <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
-          </header>
-          <section>
-            {{ page.previous.excerpt }}
-          </section>
-          <footer>
-            <ul class="actions">
-              <li><a href="{{ page.previous.url }}" class="button">Read More</a></li>
-            </ul>
-          </footer>
-        </article>
-      {% endif %}
-
-      {% if page.next %}
-        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
-          <header>
-            <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
-          </header>
-          <section>
-            {{ page.next.excerpt | markdownify }}
-          </section>
-          <footer>
-            <ul class="actions">
-              <li><a href="{{ page.next.url }}" class="button">Read More</a></li>
-            </ul>
-          </footer>
-        </article>
-      {% endif %}
-      </div>
+      {% include disqus.html %}
     </footer>
   </article>
 </div>

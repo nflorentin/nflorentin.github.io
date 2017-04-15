@@ -6,16 +6,30 @@ title: 'Où manger'
 <div id="main">
   <h1>Où manger</h1>
 
-  hey
   <br>
-  page title {{ page.title }}
-  <br>
-  page name {{ page.name }}
-  <br>
-  name {{ name }}
-  <br>
-  page slug {{ page.slug }}
 
-  {% assign category = site.my_categories | where: "slug", 'ou-manger' %}
-  {{ category.name }}
+  {% for post in site.categories[page.slug] %}
+    <article class="{% cycle '6u', '6u$' %} 12u(small)">
+      <header>
+        <h2>
+          <a href="{{ post.url }}" style="margin-right: 12px;">{{ post.title }}</a>
+          {% for tag in post.tags %}
+            <button class="toolbar-button toolbar-button--outline">{{ tag }}</button>
+          {% endfor %}
+        </h2>
+
+      </header>
+      <section>
+        ajouté le {{ post.date | date: '%d/%m/%Y'  }}
+      </section>
+    </article>
+ 
+    {% unless forloop.last %}
+      <hr class="margin-1-rem">
+    {% endunless %}
+  {% endfor %}
+
+  <footer>
+    {% include disqus.html %}
+  </footer>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 'Bienvenue'
+comments: true
 ---
 <div id="main">
   <section>
@@ -19,9 +20,13 @@ title: 'Bienvenue'
 
     <p>
       Pour le moment le site recense principalement des <a href="/categories/ou-manger/">lieux pour manger</a> (car c'est ce qui nous intéresse le plus bien sûr !)
-      mais j'aimerais par la suite élargir la liste aux lieux pour faire ses courses, boire un verre et aux bons plans en général.
+      mais j'aimerais par la suite élargir la liste aux lieux pour faire ses courses et aux bons plans en général.
     </p>
     
-    <p><address>Vos suggestions et commentaires sont les bienvenus, pour cela, <a href="mailto:{{ site.author.email }}" class="">envoyez-moi un email <i class="fa fa-envelope-o"></i></a>.</address></p>
+    <p><address>Vos suggestions et commentaires sont les bienvenus, pour cela, <a href="mailto:{{ site.author.email }}" class="">envoyez-moi un email <i class="fa fa-envelope-o"></i></a> ou laissez un commentaire sur cette page.</address></p>
   </section>
+
+  <footer>
+    {% include disqus.html %}
+  </footer>
 </div>

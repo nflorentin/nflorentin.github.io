@@ -2,10 +2,10 @@
 title: Festina Lente
 date: 2017-04-08
 name: Festina Lente
-price: 3
+price: 2
 vegan_friendly: 2
 gmaps_link: https://www.google.fr/maps/place/Restaurant+Festina+Lente/@45.19228,5.7295563,17z/data=!3m1!4b1!4m5!3m4!1s0x478af48ae777369f:0x9e62c34edbc6d123!8m2!3d45.19228!4d5.731745
-tags: ['legumes', 'cozy']
+tags: ['legumes', 'cosy', 'colore']
 category: ou-manger
 ---
 

@@ -26,19 +26,16 @@
 			<nav class="nav-left">
 				<a href="/"><h1 class="h1">Vivre Végé Grenoble</h1></a>
 				<a href="/categories/ou-manger/">Où manger</a><br>
-				<a href="/credits/">Crédits</a><br>
 				<image src="/images/favicon.png"></image>
 			</nav>
     </header>
 
     {{ content }}
 
-		{% assign category = site.my_categories | where: "slug", 'ou-manger' %}
-  	{{ category.name }}
-
     <footer id="footer">
       <ul class="icons">
         <li>
+          <a href="/credits/">Crédits</a><br>
           <a href="mailto:{{ site.author.email }}" class="icon fa-envelope-o">
       			<span class="label">Email</span>
     			</a>
