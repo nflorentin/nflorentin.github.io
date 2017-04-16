@@ -1,0 +1,18 @@
+{% capture price_title %}
+  {% include price_title.html post=include.post %}
+{% endcapture %}
+
+{% capture friendly_title %}
+  {% include friendly_title.html post=include.post %}
+{% endcapture %}
+<h2 style="margin-bottom: 10px;">
+  <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+</h2>
+<p style="margin-bottom: 1em">
+  {% for tag in include.post.tags %}
+    <button class="toolbar-button toolbar-button--outline" {% if forloop.first %} style="margin-left: 0" {% endif %}>{{ tag }}</button>
+  {% endfor %}
+  <br>
+</p>
+<span title="{{ price_title }}">{% for num in (1..include.post.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
+<span title="{{ friendly_title }}">{% for num in (1..include.post.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %}</span>

@@ -1,10 +1,14 @@
 ---
 title: Tea and Bubbles
 date: 2017-04-13
+last_modified_at: 2017-04-16
 name: Tea and Bubbles
 price: 1
 vegan_friendly: 2
 gmaps_link: https://www.google.fr/maps/place/Tea+and+Bubbles/@45.1920818,5.7267276,17z/data=!3m1!4b1!4m5!3m4!1s0x478af48a3ec7bc81:0xae948cf101862dc2!8m2!3d45.1920818!4d5.7289163
+latitude: 45.192083
+longitude: 5.728918
+address: 16 Rue des Clercs, 38000 Grenoble
 tags: ['snack', 'boissons']
 category: ou-manger
 ---

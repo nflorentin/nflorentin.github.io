@@ -1,0 +1,67 @@
+---
+layout: default
+title: La carte
+permalink: /carte/
+comments: true
+---
+
+<div id="main">
+  <div id="map" style="height: 600px; width: 100%;"></div>
+
+  <footer>
+    {% include disqus.html %}
+  </footer>
+</div>
+
+<script type="text/javascript">
+  var map;
+  function initMap() {
+    map = new GMaps({
+      div: '#map',
+      lat: 45.187306,
+      lng: 5.723095,
+      zoomControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_BOTTOM
+      }
+    });
+
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    var icons = {
+      dining: {
+        icon: iconBase + 'dining.png'
+      }
+    };
+
+    var image = {
+      url: icons['dining'].icon,
+      scaledSize: new google.maps.Size(32, 32),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(16, 32)
+    };
+
+    var bounds = new google.maps.LatLngBounds();
+    
+    {% for post in site.categories['ou-manger'] %}
+      var infoWindow = {
+        content: '{% capture window_content %}{% include info_window_content.html post=post %}{% endcapture %}{{ window_content | strip_newlines }}'
+      };
+      
+      var markerInstance = map.addMarker({
+        lat: {{ post.latitude }},
+        lng: {{ post.longitude }},
+        icon: image,
+        title: '{{ post.title }}',
+        infoWindow: infoWindow
+      });
+      
+      bounds.extend(markerInstance.getPosition());
+
+    {% endfor %}
+
+    map.fitBounds(bounds);
+  }
+</script>
+
+{% include gmaps.html %}
+
+
