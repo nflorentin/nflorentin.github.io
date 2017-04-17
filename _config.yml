@@ -84,7 +84,8 @@ defaults:
     scope:
       path: ""
       type: "my_categories"
-    values: {}
+    values: 
+      comments: true
   -
     scope:
       path: ""
