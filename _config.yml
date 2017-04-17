@@ -7,7 +7,8 @@ disqus:
   shortname: vivre-vege-grenoble
 google:
   api_key: AIzaSyBtAKkpa7bQmyBnu28YDuOFwPMvdu0-Ak0
-image: "/images/bg.jpg"
+facebook:
+  app_id: 1025531304247709
 
 # Default description in social shares for the jekyll-seo-tag gem
 description: > # this means to ignore newlines until "baseurl:"
