@@ -13,7 +13,7 @@ comments: true
   </footer>
 </div>
 
-{% include gmaps.html %}
+<script type="text/javascript" src="/js/gmaps.min.js"></script>
 
 <script type="text/javascript">
   var map;
@@ -63,6 +63,8 @@ comments: true
     map.fitBounds(bounds);
   }
 </script>
+
+{% include gmaps.html %}
 
 
 
