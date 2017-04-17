@@ -7,6 +7,7 @@ disqus:
   shortname: vivre-vege-grenoble
 google:
   api_key: AIzaSyBtAKkpa7bQmyBnu28YDuOFwPMvdu0-Ak0
+image: "/images/bg.jpg"
 
 # Default description in social shares for the jekyll-seo-tag gem
 description: > # this means to ignore newlines until "baseurl:"
@@ -65,6 +66,11 @@ collections:
 
 
 defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      image: /images/bg.jpg
   -
     scope:
       path: "" # an empty string here means all files in the project
