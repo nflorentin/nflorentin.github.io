@@ -9,7 +9,7 @@ gmaps_link: https://www.google.fr/maps/place/Bagelstein/@45.191298,5.7282617,17z
 latitude: 45.191260
 longitude: 5.730472
 address: 8 Place Sainte-Claire, 38000 Grenoble
-tags: ['sandwich', 'fast-food']
+tags: ['sandwich', 'fast-food', 'snack']
 category: ou-manger
 ---
 

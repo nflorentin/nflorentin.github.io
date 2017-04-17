@@ -9,7 +9,7 @@ gmaps_link: https://www.google.fr/maps/place/Restaurant+Au+Clair+de+Lune/@45.192
 latitude: 45.191969
 longitude: 5.734671
 address: 54 Rue Très Cloîtres, 38000 Grenoble
-tags: ['legumes', 'cosy', 'colore']
+tags: ['legumes', 'cozy', 'colore']
 category: ou-manger
 ---
 

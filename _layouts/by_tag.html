@@ -1,19 +1,18 @@
 ---
 layout: default
-title: 'Où manger'
 ---
 
 <div id="main">
-  <h1>Où manger</h1>
+  <h1>{{ page.title }}</h1>
 
   <br>
-
-  {% for post in site.categories[page.slug] %}
+  
+  {% for post in site.tags[page.slug] %}
     <article class="">
       <header>
         <h2>
           <a href="{{ post.url }}" style="margin-right: 12px;">{{ post.title }}</a>
-          {% for tag in post.tags %}
+          {% for tag in post.tags %}            
             {% assign tagItem = site.my_tags | where: "slug", tag | first %}
             <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline hover-none">{{ tagItem.name }}</a>
           {% endfor %}

@@ -1583,6 +1583,10 @@
 			text-decoration: none;
 		}
 
+		a.hover-none:hover {
+			border-bottom-color: initial;
+		}
+
 	strong, b {
 		color: #787878;
 		font-weight: 400;

@@ -10,7 +10,8 @@
 </h2>
 <p style="margin-bottom: 1em">
   {% for tag in include.post.tags %}
-    <button class="toolbar-button toolbar-button--outline" {% if forloop.first %} style="margin-left: 0" {% endif %}>{{ tag }}</button>
+    {% assign tagItem = site.my_tags | where: "slug", tag | first %}
+    <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline hover-none" {% if forloop.first %} style="margin-left: 0" {% endif %}>{{ tagItem.name }}</a>
   {% endfor %}
   <br>
 </p>

@@ -9,7 +9,7 @@ gmaps_link: https://www.google.fr/maps/place/Restaurant+Festina+Lente/@45.19228,
 latitude: 45.192281 
 longitude: 5.731736
 address: Place des Tilleuls-, Rue Saint-Hugues, 38000 Grenoble
-tags: ['legumes', 'cosy', 'colore']
+tags: ['legumes', 'cozy', 'colore']
 category: ou-manger
 ---
 
