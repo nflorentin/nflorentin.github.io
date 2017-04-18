@@ -2,13 +2,6 @@
 layout: default
 comments: true
 ---
-{% capture price_title %}
-  {% include price_title.html post=page %}
-{% endcapture %}
-
-{% capture friendly_title %}
-  {% include friendly_title.html post=page %}
-{% endcapture %}
 
 <div id="main">
   <article>
@@ -20,17 +13,12 @@ comments: true
         {% endfor %} 
       </h1>
       <p class="post-meta">
+        {% include place_meta.html post=page %}
       </p>
     </header>
 
     <section>
       {{ content }}
-
-      <p>
-        <span title="{{ price_title | strip_newlines | strip }}">{% for num in (1..page.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
-        <span title="{{ friendly_title | strip_newlines | strip }}">{% for num in (1..page.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
-        <a href="{{ page.gmaps_link }}" target="_blank"><i class="fa fa-map-marker"></i></a> 
-      </p>
 
       <div id="map" style="height: 350px; width: 100%;"></div>
     </section>
