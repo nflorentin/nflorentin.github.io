@@ -14,13 +14,12 @@ comments: true
   <article>
     <header>
       <h1 class="post-title">{{ page.title }}
-
-      {% for tag in page.tags %}
-            <button class="toolbar-button toolbar-button--outline">{{ tag }}</button>
+        {% for tag in page.tags %}
+          {% assign tagItem = site.my_tags | where: "slug", tag | first %}
+          <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline hover-none">{{ tagItem.name }}</a>
         {% endfor %} 
       </h1>
       <p class="post-meta">
-        
       </p>
     </header>
 
@@ -28,8 +27,8 @@ comments: true
       {{ content }}
 
       <p>
-        <span title="{{ price_title }}">{% for num in (1..page.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
-        <span title="{{ friendly_title }}">{% for num in (1..page.vegan_friendly) %} <image src="/images/favicon.png" title="{{ friendly_title }}"></image> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
+        <span title="{{ price_title | strip_newlines | lstrip }}">{% for num in (1..page.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
+        <span title="{{ friendly_title | strip_newlines | lstrip }}">{% for num in (1..page.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
         <a href="{{ page.gmaps_link }}" target="_blank"><i class="fa fa-map-marker"></i></a> 
       </p>
 
