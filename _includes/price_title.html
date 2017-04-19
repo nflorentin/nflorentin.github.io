@@ -1,8 +1,1 @@
-  {% case include.post.price %}
-  {% when 1 %}
-  budget moins de 10 euros
-  {% when 2  %}
-  budget 10-20 euros
-  {% else %}
-  budget 20 euros et plus
-  {% endcase %}
+{% case include.post.price %}{% when 1 %}budget moins de 10 euros{% when 2  %}budget 10-20 euros{% else %}budget 20 euros et plus{% endcase %}

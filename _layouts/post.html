@@ -2,36 +2,23 @@
 layout: default
 comments: true
 ---
-{% capture price_title %}
-  {% include price_title.html post=page %}
-{% endcapture %}
-
-{% capture friendly_title %}
-  {% include friendly_title.html post=page %}
-{% endcapture %}
 
 <div id="main">
   <article>
     <header>
       <h1 class="post-title">{{ page.title }}
-
-      {% for tag in page.tags %}
-            <button class="toolbar-button toolbar-button--outline">{{ tag }}</button>
+        {% for tag in page.tags %}
+          {% assign tagItem = site.my_tags | where: "slug", tag | first %}
+          <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline hover-none">{{ tagItem.name }}</a>
         {% endfor %} 
       </h1>
       <p class="post-meta">
-        
+        {% include place_meta.html post=page %}
       </p>
     </header>
 
     <section>
       {{ content }}
-
-      <p>
-        <span title="{{ price_title }}">{% for num in (1..page.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
-        <span title="{{ friendly_title }}">{% for num in (1..page.vegan_friendly) %} <image src="/images/favicon.png" title="{{ friendly_title }}"></image> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
-        <a href="{{ page.gmaps_link }}" target="_blank"><i class="fa fa-map-marker"></i></a> 
-      </p>
 
       <div id="map" style="height: 350px; width: 100%;"></div>
     </section>

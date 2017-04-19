@@ -15,5 +15,5 @@
   {% endfor %}
   <br>
 </p>
-<span title="{{ price_title }}">{% for num in (1..include.post.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
-<span title="{{ friendly_title }}">{% for num in (1..include.post.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %}</span>
+<span title="{{ price_title | strip_newlines | strip }}">{% for num in (1..include.post.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
+<span title="{{ friendly_title | strip_newlines | strip }}">{% for num in (1..include.post.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %}</span>
