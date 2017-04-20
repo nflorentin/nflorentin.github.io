@@ -15,7 +15,7 @@ category: ou-manger
 
 L'Escale Indienne a ouvert récemment, en 2016. Très discret, je l'avais à peine remarqué jusqu'au jour où j'ai aperçu une petite ardoise à travers la vitre affichant “Plateaux végétariens, végans ou sans-gluten”. Autant dire qu'il est remonté automatiquement dans ma liste des restaurants à essayer d’urgence! Résultat: une très bonne surprise.
 
-Je ne pourrais pas parler de tous les plats à la carte même si je suis certain qu'ils sont délicieux, par contre je peux vous dire 2 mots du plateau vegan: dal de lentilles, légumes aux épices, riz, chapati au blé complet, chapati de pois chiche et beignets de légumes. Les épices sont torréfiées par la chef, les produits sont frais, tout est délicieux, que dire de plus ?
+Je ne pourrais pas parler de tous les plats à la carte même si je suis certain qu'ils sont délicieux, par contre je peux vous dire 2 mots du plateau végan: dal de lentilles, légumes aux épices, riz, chapati au blé complet, chapati de pois chiche et beignets de légumes. Les épices sont torréfiées par la chef, les produits sont frais, tout est délicieux, que dire de plus ?
 
 Ce que j’apprécie aussi dans ce restaurant, c’est la proximité avec le personnel, notamment avec la chef, avec qui j'ai eu l'occasion de parler des plats que j'avais dégustés et de potentiels desserts végans.
 
