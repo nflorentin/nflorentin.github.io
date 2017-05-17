@@ -18,6 +18,7 @@ layout: default
           {% endfor %}
         </h2>
 
+        {% include place_meta.html post=post %}
       </header>
       <section>
         ajouté le {{ post.date | date: '%d/%m/%Y'  }}
