@@ -14,6 +14,8 @@ comments: true
       </h1>
       <p class="post-meta">
         {% include place_meta.html post=page %}
+        {% assign author = site.authors | where: "slug", page.author | first %}
+        de {{ author.name }}
       </p>
     </header>
 
