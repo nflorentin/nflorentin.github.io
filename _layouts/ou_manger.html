@@ -15,7 +15,7 @@ title: 'Où manger'
           <a href="{{ post.url }}" style="margin-right: 12px;">{{ post.title }}</a>
           {% for tag in post.tags %}
             {% assign tagItem = site.my_tags | where: "slug", tag | first %}
-            <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline hover-none">{{ tagItem.name }}</a>
+            <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline toolbar-button--tag hover-none">{{ tagItem.name }}</a>
           {% endfor %}
         </h2>
 

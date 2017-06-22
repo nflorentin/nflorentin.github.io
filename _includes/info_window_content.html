@@ -5,15 +5,16 @@
 {% capture friendly_title %}
   {% include friendly_title.html post=include.post %}
 {% endcapture %}
-<h2 style="margin-bottom: 14px;">
+<h2 style="margin-bottom: 21px;">
   <a href="{{ include.post.url }}">{{ include.post.title }}</a>
 </h2>
-<p style="margin-bottom: 1em">
+<p style="margin-bottom: 19px;">
   {% for tag in include.post.tags %}
     {% assign tagItem = site.my_tags | where: "slug", tag | first %}
-    <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline hover-none" {% if forloop.first %} style="margin-left: 0" {% endif %}>{{ tagItem.name }}</a>
+    <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline toolbar-button--tag hover-none" {% if forloop.first %} style="margin-left: 0" {% endif %}>{{ tagItem.name }}</a>
   {% endfor %}
   <br>
 </p>
+<hr style="border-bottom: solid 1px rgba(130, 126, 126, 0.28); margin: 16px 0px;">
 <span title="{{ price_title | strip_newlines | strip }}">{% for num in (1..include.post.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
 <span title="{{ friendly_title | strip_newlines | strip }}">{% for num in (1..include.post.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %}</span>

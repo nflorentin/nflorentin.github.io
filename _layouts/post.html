@@ -9,7 +9,7 @@ comments: true
       <h1 class="post-title">{{ page.title }}
         {% for tag in page.tags %}
           {% assign tagItem = site.my_tags | where: "slug", tag | first %}
-          <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline hover-none">{{ tagItem.name }}</a>
+          <a href="/tags/{{ tag }}" class="toolbar-button toolbar-button--outline toolbar-button--tag hover-none">{{ tagItem.name }}</a>
         {% endfor %} 
       </h1>
       <p class="post-meta">
