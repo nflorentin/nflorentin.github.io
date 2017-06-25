@@ -54,7 +54,7 @@ comments: true
       lng: {{ page.longitude }},
       title: '{{ page.title }}',
       infoWindow: {
-        content: "<h2>{{ page.title }}</h2><a href=\"{{ page.gmaps_link }}\" target=\"_blank\"><p style=\"margin: 0\">{{ page.address }}</p></a>"
+        content: "<h2>{{ page.title }}</h2>{% if page.gmaps_link %}<a href=\"{{ page.gmaps_link }}\" target=\"_blank\">{% endif %}<p style=\"margin: 0\">{{ page.address }}</p></a>"
       }
     });
 

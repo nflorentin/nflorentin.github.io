@@ -6,5 +6,5 @@
 {% endcapture %}
 
 <span title="{{ price_title | strip_newlines | strip }}">{% for num in (1..include.post.price) %} <i class="fa fa-euro"></i> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
-<span title="{{ friendly_title | strip_newlines | strip }}">{% for num in (1..include.post.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %}</span>&nbsp;&nbsp;•&nbsp;&nbsp;
-<a href="{{ include.post.gmaps_link }}" target="_blank"><i class="fa fa-map-marker"></i></a> 
+<span title="{{ friendly_title | strip_newlines | strip }}">{% for num in (1..include.post.vegan_friendly) %} <image src="/images/favicon.png"></image> {% endfor %}</span>
+{% if include.post.gmaps_link %}&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;<a href="{{ include.post.gmaps_link }}" target="_blank"><i class="fa fa-map-marker"></i></a>{% endif %}
