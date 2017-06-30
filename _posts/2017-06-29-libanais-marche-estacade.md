@@ -1,8 +1,8 @@
 ---
-title: Libanais - Marché de l'Estacade
+title: Libanais - Marché de l&#39;Estacade
 date: 2017-06-30
 last_modified_at: 2017-06-30
-name: Libanais - Marché de l'Estacade
+name: Libanais - Marché de l&#39;Estacade
 price: 1
 vegan_friendly: 2
 gmaps_link: https://www.google.com/maps/place/March%C3%A9+de+l'Estacade/@45.1852313,5.7170774,19.45z/data=!4m5!3m4!1s0x0:0x1ea12d040274f6f7!8m2!3d45.1852422!4d5.7170574
