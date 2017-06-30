@@ -14,7 +14,7 @@ category: ou-manger
 ---
 
 Ceci est une publication un peu spéciale puisque ce n'est pas d'un restaurant dont on va parler mais d'une étale de marché. 
-Ici, pas besoin de murs pour servir une cuisine libanaise rafinée et authentique.
+Ici, pas besoin de murs pour servir une cuisine libanaise rafinée, familiale et authentique.
 
 Tout ce qui est en vente sur cette étale est fait maison et frais. L'offre varie en fonction des saisons car le chef
 cuisine des produits frais et de saison, donc ne vous attendez pas à trouver du Baba ghanouj (caviar d'aubergine) en plein hiver.
@@ -26,5 +26,4 @@ Tous les mets que j'ai gouté surpassaient largement en qualité ce qu'on peut t
 Pour couronner le tout, le chef est très sympathique et partage son savoir avec plaisir. Seul petit regret, il n'est
 **présent** sur le marché que le **mercredi** et le **vendredi**.
 
-
-
+Un incontournable quand on aime la cuisine libanaise.
