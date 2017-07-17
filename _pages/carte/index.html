@@ -44,9 +44,13 @@ comments: true
     var bounds = new google.maps.LatLngBounds();
     
     {% for post in site.categories['ou-manger'] %}
-      var infoWindow = new google.maps.InfoWindow({
+      // var infoWindow = new google.maps.InfoWindow({
+      //   content: '{% capture window_content %}{% include info_window_content.html post=post %}{% endcapture %}{{ window_content | strip_newlines }}'
+      // });
+
+      var infoWindow = {
         content: '{% capture window_content %}{% include info_window_content.html post=post %}{% endcapture %}{{ window_content | strip_newlines }}'
-      });
+      };
       
       var markerInstance = map.addMarker({
         lat: {{ post.latitude }},
@@ -56,13 +60,13 @@ comments: true
         infoWindow: infoWindow
       });
 
-      markerInstance.addListener('click', function(){
-        if (infoWindow.getMap()) {
-          infoWindow.close();
-        } else {
-          infoWindow.open(map, this)
-        }
-      });
+      // markerInstance.addListener('click', function(){ 
+      //   if (iw.getMap()) {
+      //     iw.close();
+      //   } else {
+      //     iw.open(markerInstance.get('map'), markerInstance)
+      //   }
+      // });
       
       bounds.extend(markerInstance.getPosition());
 
