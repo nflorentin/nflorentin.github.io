@@ -16,6 +16,20 @@ comments: true
 <script type="text/javascript" src="/js/gmaps.min.js"></script>
 
 <script type="text/javascript">
+  function addInfoWindow(marker, content) {
+    var infoWindow = new google.maps.InfoWindow({
+      content: content
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+      if (infoWindow.getMap()) {
+        infoWindow.close();
+      } else {
+        infoWindow.open(marker.get('map'), marker);
+      }
+    });
+  }
+
   var map;
   function initMap() {
     map = new GMaps({
@@ -44,30 +58,14 @@ comments: true
     var bounds = new google.maps.LatLngBounds();
     
     {% for post in site.categories['ou-manger'] %}
-      // var infoWindow = new google.maps.InfoWindow({
-      //   content: '{% capture window_content %}{% include info_window_content.html post=post %}{% endcapture %}{{ window_content | strip_newlines }}'
-      // });
-
-      var infoWindow = {
-        content: '{% capture window_content %}{% include info_window_content.html post=post %}{% endcapture %}{{ window_content | strip_newlines }}'
-      };
-      
       var markerInstance = map.addMarker({
         lat: {{ post.latitude }},
         lng: {{ post.longitude }},
         icon: image,
         title: '{{ post.title }}',
-        infoWindow: infoWindow
       });
 
-      // markerInstance.addListener('click', function(){ 
-      //   if (iw.getMap()) {
-      //     iw.close();
-      //   } else {
-      //     iw.open(markerInstance.get('map'), markerInstance)
-      //   }
-      // });
-      
+      addInfoWindow(markerInstance, '{% capture window_content %}{% include info_window_content.html post=post %}{% endcapture %}{{ window_content | strip_newlines }}');
       bounds.extend(markerInstance.getPosition());
 
     {% endfor %}
