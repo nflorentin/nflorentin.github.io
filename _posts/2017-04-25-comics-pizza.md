@@ -1,14 +1,14 @@
 ---
 title: Comics Pizza
 date: 2017-04-25
-last_modified_at: 2017-04-25
+last_modified_at: 2017-07-20
 name: Comics Pizza
 price: 2
 vegan_friendly: 2
 gmaps_link: https://www.google.com/maps/place/Comics+Pizza/@45.192475,5.730205,15z/data=!4m2!3m1!1s0x0:0x659bba941066d284?sa=X&ved=0ahUKEwilt4_Kjb_TAhVHNhoKHeVAARUQ_BIIeTAK
 latitude: 45.192471
 longitude: 5.730205
-address: 18 Rue Barnave, 38000 Grenoble, France
+address: 18 Rue Barnave, 38000 Grenoble
 tags: ['fast-food', 'pizzas']
 category: ou-manger
 ---
