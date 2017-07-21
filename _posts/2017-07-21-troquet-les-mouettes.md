@@ -17,7 +17,7 @@ Ce restaurant a accueilli de nouveaux propriétaires en mai 2017 qui ont directe
 proposant trois entrées, trois plats et trois desserts avec toujours une option végane pour chaque partie du repas. Ils tiennent à ce que tout le monde puisse manger dans leur 
 établissement et ce sans avoir à prévenir à l'avance ou faire adapter un plat au dernier moment.
 
-Passionnée, la cheffe propose une cuisine fraiche et raffinée dans un style gastro. Le mot fait-maison n'est pas pris à la légère, même le pain est fait sur place.
+Passionnée, la cheffe propose une cuisine fraiche et raffinée dans un style gastro. Ici, le concept du fait maison n'est pas pris à la légère, même le pain est fait sur place.
 Nous nous y sommes rendus à six et le repas a fait l'unanimité, tout était délicieux.
 
 Exemples de plats véganes: salade de tomates anciennes, panisse et sa ratatouille de légumes au tofu mariné, mousse au chocolat au tofu soyeux, sauté de légumes au miso, roulade de courgette farcie ratatouille et petit épeautre, ou encore gaspacho courgette curry lait de coco.
