@@ -1,7 +1,7 @@
 ---
 title: Troquet Les Mouettes
-date: 2017-07-21
-last_modified_at: 2017-07-21
+date: 2017-07-23
+last_modified_at: 2017-07-23
 name: Troquet Les Mouettes
 price: 3
 vegan_friendly: 3
