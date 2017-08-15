@@ -31,7 +31,7 @@ permalink: pretty
 
 include: ["_pages"]
 
-gems:
+plugins:
   - "jekyll-feed"
   - "jekyll-seo-tag"
   - "jekyll-paginate"
