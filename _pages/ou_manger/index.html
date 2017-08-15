@@ -6,7 +6,7 @@ sitemap: false
 ---
 <div id="main">
   <h1>Où manger</h1>
-
+{% comment %}
   {% for post in site.posts %}
     <article class="post-preview">
       <a href="{{ post.url | prepend: site.baseurl }}">
@@ -17,9 +17,7 @@ sitemap: false
         {{ post.subtitle }}
       </h3>
 	  {% endif %}
-    </a> 
-
-    
+    </a>     
 
     <p class="post-meta">
       ajouté le {{ post.date | date: "%B %-d, %Y" }}
@@ -28,7 +26,7 @@ sitemap: false
     <div class="post-entry-container">
       {% if post.image %}
       <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
+        <a href="{{ post.url }}">
           <img src="{{ post.image }}">
         </a>
       </div>
@@ -78,5 +76,5 @@ sitemap: false
   {% for post in posts %}
     {% include place.html place=post %}
   {% endfor %}
-
+{% endcomment %}
 </div>
