@@ -1,8 +1,8 @@
 ---
-title: L'Île  Maurice
+title: L&#39;Île  Maurice
 date: 2017-09-12
 last_modified_at: 2017-09-12
-name: L'Île  Maurice
+name: L&#39;Île  Maurice
 price: 2
 vegan_friendly: 1
 gmaps_link: https://www.google.fr/maps/place/Restaurant+L'%C3%8Ele+Maurice/@45.1847145,5.722395,15z/data=!4m2!3m1!1s0x0:0xb1e89352383a7340?sa=X&ved=0ahUKEwiCpcqGpL7WAhVE8RQKHdwXDUQQ_BIIejAK
