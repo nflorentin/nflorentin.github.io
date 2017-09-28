@@ -19,4 +19,4 @@ Le buffet du midi est somptueux: les plats riches en couleur et en saveurs sont 
 
 Ce restaurant est plutôt vegan-friendly puisqu’il suffit de le préciser au moment de la réservation pour que le buffet soit adapté en conséquence. Pensez quand même à le faire quelques jours avant pour ne pas la prendre de court. 
 
-
+Mise à jour 29/09/2017: il n'y a plus de buffet à volonté le midi, mais c'est toujours aussi bon et vegan friendly.
