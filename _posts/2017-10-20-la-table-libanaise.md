@@ -14,7 +14,7 @@ category: ou-manger
 ---
 
 Les nouveaux propriétaires de ce restaurant libanais ont mis une assiette végane à leur carte. C'est assez rare pour être souligné.
-L'assiette est composée de falafels, de houmous, de pommes de terre sautées ainsi que d'une salade. On aimerait qu'elle soit un peu plus variée mais avec son petit prix (7 euros 90) cela en fait une bonne option pour manger sur le pouce sans se ruiner. Il y a également des mézzés 100% végétal tels que la moussaka et le yalangi (feuilles de vignes farcies).
+L'assiette est composée de falafels, de houmous, de pommes de terre sautées ainsi que d'une salade. On aimerait qu'elle soit un peu plus variée mais avec son petit prix (7 euros 90) cela en fait une bonne option pour manger sur le pouce sans se ruiner. Il y a également des mezzés 100% végétal tels que la moussaka et le yalangi (feuilles de vignes farcies).
 
 
 
