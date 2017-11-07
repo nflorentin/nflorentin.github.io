@@ -1,7 +1,7 @@
 ---
 title: La Table Libanaise
 date: 2017-10-20
-last_modified_at: 2017-10-20
+last_modified_at: 2017-11-07
 name: La Table Libanaise
 price: 1
 vegan_friendly: 2
