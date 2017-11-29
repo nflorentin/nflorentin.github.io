@@ -1,7 +1,7 @@
 ---
 title: Le Casse-Croûte à Dédé
 date: 2017-06-04
-last_modified_at: 2017-06-04
+last_modified_at: 2017-11-29
 name: Le Casse-Croûte à Dédé
 price: 1
 vegan_friendly: 1
@@ -20,3 +20,5 @@ Vendu sous le nom de "sandwich végétarien", il est végane pour peu qu'on choi
 elles sont servies généreusement.
 
 C'est une bonne option pour manger rapidemment et à très petit prix (3 euros 80). 
+
+Mise à jour 29/11/2017: A priori le prix du sandwich a augmenté à 4 euros 20.
