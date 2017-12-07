@@ -1,7 +1,7 @@
 ---
 title: Green sur mesure
 date: 2017-09-28
-last_modified_at: 2017-09-28
+last_modified_at: 2017-12-07
 name: Green sur mesure
 price: 2
 vegan_friendly: 2
@@ -13,4 +13,4 @@ tags: ['fast-food', 'colore', 'legumes', 'sandwich', 'cru-friendly']
 category: ou-manger
 ---
 
-[Green sur mesure](https://www.facebook.com/GreensurMesureGrenoble/) est un "salad bar" qui sert des salades et des sandwichs sur mesure. Étant donné que l'on choisit soit-même les ingrédients, on peut tout à fait y manger 100% végétale.
+[Green sur mesure](https://www.facebook.com/GreensurMesureGrenoble/) est un "salad bar" qui sert des salades et des sandwichs sur mesure. Étant donné que l'on choisit soit-même les ingrédients, on peut tout à fait y manger 100% végétal.
