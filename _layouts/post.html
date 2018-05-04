@@ -61,6 +61,8 @@ comments: true
 
      // var markerInstance = map.markers[0];
       markerInstance.infoWindow.open(map, markerInstance);
+    {% else %}
+      document.getElementById('map').style.height = '0px';
     {% endif %}
   }
 </script>
