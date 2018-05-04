@@ -58,18 +58,18 @@ comments: true
     var bounds = new google.maps.LatLngBounds();
     
     {% for post in site.categories['ou-manger'] %}
-      var markerInstance = map.addMarker({
-        lat: {{ post.latitude }},
-        lng: {{ post.longitude }},
-        icon: image,
-        title: '{{ post.title }}',
-      });
+      {% if post.latitude %}
+        var markerInstance = map.addMarker({
+          lat: {{ post.latitude }},
+          lng: {{ post.longitude }},
+          icon: image,
+          title: '{{ post.title }}',
+        });
 
-      addInfoWindow(markerInstance, '{% capture window_content %}{% include info_window_content.html post=post %}{% endcapture %}{{ window_content | strip_newlines }}');
-      bounds.extend(markerInstance.getPosition());
-
+        addInfoWindow(markerInstance, '{% capture window_content %}{% include info_window_content.html post=post %}{% endcapture %}{{ window_content | strip_newlines }}');
+        bounds.extend(markerInstance.getPosition());
+      {% endif %}
     {% endfor %}
-
     map.fitBounds(bounds);
   }
 </script>

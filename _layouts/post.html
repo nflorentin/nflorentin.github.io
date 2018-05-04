@@ -34,32 +34,34 @@ comments: true
 <script type="text/javascript">
   var map;
   function initMap() {
-    map = new GMaps({
-      el: '#map',
-      lat: {{ page.latitude }},
-      lng: {{ page.longitude }},
-      scrollwheel: false,
-//      mapTypeControlOptions: {
-//        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-//        position: google.maps.ControlPosition.BOTTOM_LEFT
-//     },
-//      zoomControl: true,
-      zoomControlOptions: {
-        position: google.maps.ControlPosition.RIGHT_BOTTOM
-      }
-    });
+    {% if page.latitude %}
+      map = new GMaps({
+        el: '#map',
+        lat: {{ page.latitude }},
+        lng: {{ page.longitude }},
+        scrollwheel: false,
+  //      mapTypeControlOptions: {
+  //        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+  //        position: google.maps.ControlPosition.BOTTOM_LEFT
+  //     },
+  //      zoomControl: true,
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.RIGHT_BOTTOM
+        }
+      });
 
-    var markerInstance = map.addMarker({
-      lat: {{ page.latitude }},
-      lng: {{ page.longitude }},
-      title: '{{ page.title }}',
-      infoWindow: {
-        content: "<h2>{{ page.title }}</h2>{% if page.gmaps_link %}<a href=\"{{ page.gmaps_link }}\" target=\"_blank\">{% endif %}<p style=\"margin: 0\">{{ page.address }}</p></a>"
-      }
-    });
+      var markerInstance = map.addMarker({
+        lat: {{ page.latitude }},
+        lng: {{ page.longitude }},
+        title: '{{ page.title }}',
+        infoWindow: {
+          content: "<h2>{{ page.title }}</h2>{% if page.gmaps_link %}<a href=\"{{ page.gmaps_link }}\" target=\"_blank\">{% endif %}<p style=\"margin: 0\">{{ page.address }}</p></a>"
+        }
+      });
 
-   // var markerInstance = map.markers[0];
-    markerInstance.infoWindow.open(map, markerInstance);
+     // var markerInstance = map.markers[0];
+      markerInstance.infoWindow.open(map, markerInstance);
+    {% endif %}
   }
 </script>
 
