@@ -14,7 +14,7 @@ category: ou-manger
 ---
 
 Le Bistrot de la Mixture, porté par l'association Mix'arts est un lieu de vie et de restauration qui propose une cuisine saine, locale, végétarienne et faite maison. 
-Cet établissement a ouvert il y a peu (mars 2018) mais a l'air de s'être déjà fait une place parmis les restaurants végé-friendly de Grenoble et ses alentours. 
+Cet établissement a ouvert il y a peu (mars 2018) mais a l'air de s'être déjà fait une place parmi les restaurants végé-friendly de Grenoble et ses alentours. 
 
 A priori, il y a toujours une option végane disponible mais un petit coup de fil pour vérifier ne fait jamais de mal.
 
