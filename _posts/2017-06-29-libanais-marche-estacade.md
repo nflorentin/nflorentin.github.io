@@ -1,7 +1,7 @@
 ---
 title: Libanais - Marché de l&#39;Estacade
 date: 2017-06-30
-last_modified_at: 2017-06-30
+last_modified_at: 2018-05-04
 name: Libanais - Marché de l&#39;Estacade
 price: 1
 vegan_friendly: 2
@@ -9,7 +9,7 @@ gmaps_link: https://www.google.com/maps/place/March%C3%A9+de+l'Estacade/@45.1852
 latitude: 45.185543
 longitude: 5.716914
 address: 17 Avenue de Vizille, 38000 Grenoble
-tags: ['libanais', 'legumes', 'sandwich']
+tags: ['libanais', 'legumes', 'sandwich', 'traiteur']
 category: ou-manger
 ---
 
@@ -27,3 +27,5 @@ Pour couronner le tout, le chef est très sympathique et partage son savoir avec
 **présent** sur le marché que le **mercredi** et le **vendredi**.
 
 Un incontournable quand on aime la cuisine libanaise.
+
+Petit bonus, ce marchand fait aussi traiteur.
