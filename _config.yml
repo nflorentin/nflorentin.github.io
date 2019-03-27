@@ -2,7 +2,6 @@ locale: "fr"
 title: 'Vivre Végé Grenoble' # Title of your site
 url: "https://www.vivre-vege-grenoble.fr" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
-google_analytics_key: UA-97249866-1
 disqus:
   shortname: vivre-vege-grenoble
 google:
