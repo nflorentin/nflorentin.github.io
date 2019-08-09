@@ -14,7 +14,7 @@ category: ou-manger
 ---
 
 [Fit & Gourmande](https://www.facebook.com/fitetgourmande/) n'est pas un lieu comme les autres, c'est à la fois une épicerie, un atelier, une boutique et un restaurant.
-Malgré son ouverture récente, il a déjà une liste interminable de commentaires positifs qui en disent long sur la qualité des produits et du service proposés. Beaucoup d'options 100% végétal en salé comme en sucré. Un lieu à essayer d'urgence!
+Malgré son ouverture récente, il a déjà une liste interminable de commentaires positifs qui en disent long sur la qualité des produits et du service proposés. Beaucoup d'options 100% végétal en salé comme en sucré. Il y aussi des cours de cuisine pour les adultes ainsi que pour les enfants, et des brunchs de temps en temps. Un lieu à essayer d'urgence!
 
 
 
