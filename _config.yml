@@ -8,6 +8,7 @@ google:
   api_key: AIzaSyBtAKkpa7bQmyBnu28YDuOFwPMvdu0-Ak0
 facebook:
   app_id: 1025531304247709
+faune_guide_link: https://ub.stream/aune/selection/c34a2bed-c641-4ebd-832e-aeb873a7e90c/share/index.html?l=fr&token=cff460b5-5e29-447e-ab83-bea1410adfd4
 
 # Default description in social shares for the jekyll-seo-tag gem
 description: > # this means to ignore newlines until "baseurl:"
